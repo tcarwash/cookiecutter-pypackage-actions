@@ -13,4 +13,3 @@ repos:
     rev: 3.7.9
     hooks:
     - id: flake8
-PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
