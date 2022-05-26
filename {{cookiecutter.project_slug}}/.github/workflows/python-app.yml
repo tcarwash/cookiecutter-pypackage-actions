@@ -25,9 +25,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run Tests
-      run: |
-        python -m unittest:
+        pip install tox tox-gh-actions
+    - name: Test with tox
+      run: tox
 
   build:
     runs-on: ubuntu-latest
